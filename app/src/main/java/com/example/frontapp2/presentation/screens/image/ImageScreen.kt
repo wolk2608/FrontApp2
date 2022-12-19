@@ -83,6 +83,6 @@ fun ImageScreen (
     }
 }
     } else {
-
+        LaunchedEffect(Unit) { sharedViewModel.changeScreenTitle(Screen.Image.title) }
     }
 }
