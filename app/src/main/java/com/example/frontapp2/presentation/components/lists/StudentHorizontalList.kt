@@ -43,7 +43,6 @@ fun StudentHorizontalList(students: List<Student>) {
                         .fillMaxWidth()) {
                     StudentHorizontalItem(student = student) { list.remove(student) }
                 }
-
             }
         }
     }

@@ -35,7 +35,7 @@ fun StudentVerticalItem(student: Student) {
             contentDescription = "Student photo"
         )
         if (painter.state !is AsyncImagePainter.State.Success) {
-            AnimatedShimmer { ShimmerRoomItem(brush = it) }
+            AnimatedShimmer { ShimmerStudentVerticalItem(brush = it) }
         } else {
             Column(
                 modifier = Modifier.fillMaxWidth(),
@@ -59,7 +59,7 @@ fun StudentVerticalItem(student: Student) {
 }
 
 @Composable
-fun ShimmerRoomItem(brush: Brush) {
+fun ShimmerStudentVerticalItem(brush: Brush) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(12.dp)
