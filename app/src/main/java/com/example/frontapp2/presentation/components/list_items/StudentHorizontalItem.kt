@@ -35,7 +35,7 @@ fun StudentHorizontalItem(student: Student, onClick: () -> Unit) {
                 .height(64.dp)
                 .clip(RoundedCornerShape(size = 8.dp)),
             painter = rememberAsyncImagePainter(student.photo),
-            contentScale = ContentScale.Inside,
+            contentScale = ContentScale.Crop,
             contentDescription = "Student photo"
         )
         Text(

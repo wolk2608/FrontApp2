@@ -13,13 +13,12 @@ import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 @ExperimentalAnimationApi
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             val sharedViewModel = getViewModel<SharedViewModel>()
             FrontApp2Theme(darkTheme = sharedViewModel.isDarkThemeState) {
-            //FrontApp2Theme() {
+                //FrontApp2Theme() {
                 val navController = rememberAnimatedNavController()
                 MainScreen(
                     navController = navController,
